@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.menu{
+    margin: 20px 20px;
+    height: 95vh;
+    width: 20vh;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 11;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 77, 77);
+    box-shadow: -12px -12px 12px rgba(0, 0, 0, 0.2)inset, 10px 10px 10px rgba(255, 255, 255, 0.2) inset;
+}
+
+.color-btn{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2)inset, 4px 4px 4px rgba(255, 255, 255, 0.2) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+.grey{
+    background-color: darkgray;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.aqua{
+    background-color: aqua;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
+.add-new{
+    background-color: cadetblue;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2)inset, 4px 4px 4px rgba(255, 255, 255, 0.2) inset;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    border: none;
+    background-color: rgb(17, 255, 17);
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#custom-color{
+    background-color: cadetblue;
+    border: none;
+}
