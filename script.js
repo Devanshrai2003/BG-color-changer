@@ -1,5 +1,6 @@
 const canvas = document.body;
 const menu = document.querySelector(".menu");
+const buttons = document.querySelector(".buttons");
 const colorButtons = document.querySelectorAll(".color-btn");
 const addNewBtn = document.querySelector("#submit");
 
@@ -22,5 +23,5 @@ addNewBtn.addEventListener("click", () => {
         canvas.style.backgroundColor = newColor;
     })
 
-    menu.appendChild(newBtn);
+    buttons.appendChild(newBtn);
 })
