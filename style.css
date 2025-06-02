@@ -1,109 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: whitesmoke;
+body {
+  background-color: #fafafa;
 }
 
-.menu{
-    margin: 20px 20px;
-    height: 95vh;
-    width: 20vh;
-    border-radius: 25px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(78, 77, 77);
-    box-shadow: -12px -12px 12px rgba(0, 0, 0, 0.2)inset, 10px 10px 10px rgba(255, 255, 255, 0.2) inset;
+.canvas {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 70vh;
+  width: 70vw;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 2rem;
+  transition: ease 500ms;
 }
 
-.buttons{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: 11;
-    height: 90%;
+.menu {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
 }
 
-.color-btn{
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border: none;
-    height: 30px;
-    width: 120px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2)inset, 4px 4px 4px rgba(255, 255, 255, 0.2) inset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2rem;
 }
 
-.white{
-    background-color: white;
-    color: black;
-}
-.grey{
-    background-color: darkgray;
-}
-.black{
-    background-color: black;
-}
-.red{
-    background-color: red;
-}
-.orange{
-    background-color: orange;
-}
-.yellow{
-    background-color: yellow;
-}
-.green{
-    background-color: green;
-}
-.aqua{
-    background-color: aqua;
-}
-.blue{
-    background-color: blue;
-}
-.purple{
-    background-color: purple;
-}
-.add-new{
-    background-color: cadetblue;
-    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2)inset, 4px 4px 4px rgba(255, 255, 255, 0.2) inset;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    height: 30px;
-    width: 120px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 600;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#submit{
-    border: none;
-    background-color: rgb(17, 255, 17);
-    color: white;
-    font-size: 1rem;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    margin: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.color-btn {
+  border-radius: 10px;
+  padding: 0.3rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #fafafa;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2) inset,
+    4px 4px 4px rgba(255, 255, 255, 0.2) inset;
 }
 
-#custom-color{
-    background-color: cadetblue;
-    border: none;
+.color-btn:hover {
+  opacity: 80%;
+  transition: ease 150ms;
+}
+
+.add-new {
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.2) inset,
+    4px 4px 4px rgba(255, 255, 255, 0.2) inset;
+  padding: 0.3rem 1.5rem;
+  border-radius: 10px;
+  background-color: rgb(194, 194, 194);
+  border: 1px solid lightslategray;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+.grey {
+  background-color: darkgray;
+}
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.aqua {
+  background-color: aqua;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+
+#custom-color {
+  background-color: rgb(194, 194, 194);
+  width: 1.5rem;
+  border: none;
+  margin: none;
+  padding: none;
+}
+
+#add-btn {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-btn:hover {
+  background-color: rgb(164, 165, 167);
+  transition: ease 150ms;
+}
+
+@media (max-width: 1240px) {
+  .buttons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
